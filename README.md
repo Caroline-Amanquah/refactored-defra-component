@@ -23,7 +23,7 @@ The original codebase (https://github.com/Caroline-Amanquah/nunjucks-defra-compo
 
 ## Restructured Codebase
 
-The restructured codebase, as shown in your provided files and screenshots, offers several advantages through modularisation and separation of concerns. The structure was designed to be similar to the [DEFRA/ncea-frontend](https://github.com/DEFRA/ncea-frontend) project.
+The restructured codebase, offers several advantages through modularisation and separation of concerns. The structure was designed to be similar to the [DEFRA/ncea-frontend](https://github.com/DEFRA/ncea-frontend) project.
 
 ### Separation of Configuration and Application Logic:
 
