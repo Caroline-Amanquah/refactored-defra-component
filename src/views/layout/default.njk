@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/govuk/govuk-frontend.min.css">
+    <title>{{ pageTitle }}</title>
+</head>
+<body class="govuk-template__body">
+    {% block beforeContent %}{% endblock %}
+    {% block content %}{% endblock %}
+    <script>
+        document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');
+    </script>
+    <script type="module">
+        import { initAll } from '/govuk/govuk-frontend.min.js';
+        initAll();
+    </script>
+</body>
+</html>

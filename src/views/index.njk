@@ -1,0 +1,13 @@
+{% extends "layout/default.njk" %}
+{% from "partials/panel/macro.njk" import govukPanel %}
+
+{% block beforeContent %}
+    <!-- You can add specific content here that appears before the main content -->
+{% endblock %}
+
+{% block content %}
+    {{ govukPanel({
+        titleText: "Application completed",
+        html: "Your reference number<br><strong>HDJ2123F</strong>"
+    }) }}
+{% endblock %}
